@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Constants
+﻿public class Constants
 {
     // Scenes
     public const string SceneBattle = "Battle";
