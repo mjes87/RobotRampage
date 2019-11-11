@@ -68,7 +68,10 @@ public class Gun : MonoBehaviour
         }
         if (hitObject.GetComponent<Robot>() != null)
         {
-            hitObject.GetComponent<Robot>().TakeDamage(damage);
+            if (ammo.GetAmmo(tag) > 0)
+            {
+                hitObject.GetComponent<Robot>().TakeDamage(damage);
+            }
         }
     }
 }
